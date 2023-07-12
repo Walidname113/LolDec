@@ -1,9 +1,11 @@
+# meta developer: @LolDec
+
 from .. import loader
 
 
 @loader.tds
 class sssrv(loader.Module):
-    """Отправляет различные видео/гс которые указаны в командах.\nАвтор: @LolDec."""
+    """Отправляет различные видео/гс."""
 
     strings = {"name": "ssrv"}
 
