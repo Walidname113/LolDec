@@ -5,7 +5,7 @@ from .. import loader
 class sssrv(loader.Module):
     """Отправляет различные видео/гс которые указаны в командах.\nАвтор: @LolDec."""
 
-    strings = {"name": "sssrv"}
+    strings = {"name": "ssrv"}
 
     async def ssrvacmd(self, message):
         """| Отправляет гс с ссср-эдит звуком"""
@@ -13,7 +13,7 @@ class sssrv(loader.Module):
         await message.delete()
         await message.client.send_file(
             message.to_id,
-            "https://t.me/SSSSddjjvvb/5",
+            "https://t.me/filechannelscp/29",
             voice_note=True,
             reply_to=reply.id if reply else None,
         )
@@ -22,7 +22,7 @@ class sssrv(loader.Module):
         """| Отправляет гс с БАС-БУСТ ссср-эдит звуком."""
         reply = await message.get_reply_message()
         await message.delete()
-        audio_link = "https://t.me/SSSSddjjvvb/13"
+        audio_link = "https://t.me/filechannelscp/14"
         await message.client.send_file(
             message.to_id,
             audio_link,
@@ -34,7 +34,7 @@ class sssrv(loader.Module):
         """| Отправляет видео-сообщение с эдитом про политиков в виде скелета"""
         reply = await message.get_reply_message()
         await message.delete()
-        video_link = "https://t.me/SSSSddjjvvb/15"
+        video_link = "https://t.me/filechannelscp/15"
         await message.client.send_file(
             message.to_id,
             video_link,
@@ -46,7 +46,7 @@ class sssrv(loader.Module):
         """| Отправляет видео-сообщение с эдитом про немецких войск WW2"""
         reply = await message.get_reply_message()
         await message.delete()
-        video_link = "https://t.me/SSSSddjjvvb/16"
+        video_link = "https://t.me/filechannelscp/16"
         await message.client.send_file(
             message.to_id,
             video_link,
