@@ -1,4 +1,4 @@
-# meta developer: @LolDec
+# meta developer: @LolDecMods
 
 from .. import loader
 
