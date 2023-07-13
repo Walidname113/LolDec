@@ -55,3 +55,27 @@ class sssrv(loader.Module):
             video_note=True,
             reply_to=reply.id if reply else None,
         )
+
+    async def ssrvncmd(self, message):
+        """| Отправляет видео-сообщение с эдитом про танк"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        video link = "https://t.me/filechannelscp/31"
+        await message.client.send_file(
+            message.to_id,
+            video_link,
+            video_note=True,
+            reply_to=reply.id if reply else None,
+        )
+
+    async def ssrvrcmd(self, message):
+        """| Отправляет видео-сообщение с эдитом про пистолет"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        video_link = "https://t.me/filechannelscp/32"
+        await message.client.send_file(
+            message.to_id,
+            video_link,
+            video_note=True,
+            reply_to=reply.id if reply else None,
+        )
