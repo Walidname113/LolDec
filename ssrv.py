@@ -80,7 +80,7 @@ class sssrv(loader.Module):
             reply_to=reply.id if reply else None,
         )
 
-    async def ssrvcmd(self, message):
+    async def ssrvycmd(self, message):
         """| Отправляет видео-сообщение с эдитом про политиков в виде скелета"""
         reply = await message.get_reply_message()
         await message.delete()
