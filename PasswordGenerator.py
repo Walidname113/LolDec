@@ -1,4 +1,4 @@
-# meta developer: @LolDec
+# meta developer: @LolDecMods
 # meta pic: https://www.flickr.com/photos/198729913@N04/53041989591/in/dateposted-public/
 
 import random
