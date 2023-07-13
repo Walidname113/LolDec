@@ -79,3 +79,15 @@ class sssrv(loader.Module):
             video_note=True,
             reply_to=reply.id if reply else None,
         )
+
+    async def ssrvcmd(self, message):
+        """| Отправляет видео-сообщение с эдитом про политиков в виде скелета"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        video_link = "https://youtu.be/ruB8MdWfzK4"
+        await message.client.send_file(
+            message.to_id,
+            video_link,
+            video_note=True,
+            reply_to=reply.id if reply else None,
+        )
