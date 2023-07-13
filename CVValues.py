@@ -1,8 +1,9 @@
 # meta developer: @LolDecMods
+# scope: hikka_min 1.6.2
 
 from .. import loader, utils
 import re
-
+import asyncio
 
 @loader.tds
 class CurrencyModule(loader.Module):
@@ -17,7 +18,11 @@ class CurrencyModule(loader.Module):
             await utils.answer(message, "Не указаны аргументы. Укажите сумму и тип валюты (UAH, USD, EUR, RUB, GBP, ETH, BTC).")
             return
 
+        await message.edit("🏗Получаем курс...")
+
         await message.client.send_message("@exchange_rates_vsk_bot", args)
+
+        await asyncio.sleep(3) 
 
         response = await message.client.get_messages("@exchange_rates_vsk_bot", limit=1)
 
@@ -30,4 +35,4 @@ class CurrencyModule(loader.Module):
             else:
                 await message.client.send_message(message.to_id, cleaned_message)
         else:
-            await utils.answer(message, "Не удалось получить ответ от бота.")
+            await utils.answer(message, "🚫Не удалось получить ответ от бота.")
