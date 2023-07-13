@@ -81,10 +81,10 @@ class sssrv(loader.Module):
         )
 
     async def ssrvycmd(self, message):
-        """| Отправляет видео-сообщение с эдитом про политиков в виде скелета"""
+        """| Отправляет видео-сообщение с эдитом про Gta:San."""
         reply = await message.get_reply_message()
         await message.delete()
-        video_link = "https://youtu.be/ruB8MdWfzK4"
+        video_link = "https://t.me/filechannelscp/33"
         await message.client.send_file(
             message.to_id,
             video_link,
