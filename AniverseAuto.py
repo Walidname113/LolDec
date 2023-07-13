@@ -1,4 +1,4 @@
-# meta developer: @LolDec
+# meta developer: @LolDecMods
 
 import asyncio
 from hikkatl import types
