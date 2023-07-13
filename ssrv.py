@@ -60,7 +60,7 @@ class sssrv(loader.Module):
         """| Отправляет видео-сообщение с эдитом про танк"""
         reply = await message.get_reply_message()
         await message.delete()
-        video link = "https://t.me/filechannelscp/31"
+        video_link = "https://t.me/filechannelscp/31"
         await message.client.send_file(
             message.to_id,
             video_link,
