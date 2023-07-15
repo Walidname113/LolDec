@@ -12,11 +12,11 @@ from .. import loader, utils  # type: ignore
 
 
 @loader.tds
-class RandomValueModule(loader.Module):
+class statya(loader.Module):
     """Выводит твою статью УКРФ."""
 
-    strings = {"name": "    Your C.C.F.R. Article", "example": "example"}
-    strings_ru = {"name": "Your C.C.F.R. Article"}
+    strings = {"name": "statya", "example": "example"}
+    strings_ru = {"name": "statya"}
 
     @loader.command(alias="rs", ru_doc="Выводит твою статью УКРФ.\n\nСпасибо @tvoya_statya_bot за их предоставление.")
     async def rscmd(self, m: Message):
