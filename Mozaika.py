@@ -44,7 +44,7 @@ class ModuleName(loader.Module):
                     zip_file = await self._create_zip_file(parts)
                     zip_file.name = "фото.zip"
                     await utils.answer_file(m, zip_file, force_document=True, caption="Разделенные изображения без потери качества.\n\n"
-                                                                                       "Распакуйте архив, фото в виде файла нельзя скинуть по причинам того, что Telegram не поддерживает такое.")
+                                                                                       "Распакуйте архив, фото в виде файла нельзя скинуть одним сообщением по причине того, что Telegram не поддерживает такое.")
             except UnidentifiedImageError:
                 await utils.answer(m, "Тип изображения не поддерживается PIL, это не ошибка, это неисправимо по причинам самой библиотеки.")
             except ValueError:
