@@ -18,9 +18,9 @@ class ModuleName(loader.Module):
     strings = {"name": "mozaika"}
     strings_ru = {"name": "mozaika"}
 
-    @loader.command(alias="mz", ru_doc="| Ответьте реплаем на фото, которое хотите разделить. Пример: .mz <на сколько частей разделить (2-4)> <сделать фото в img или file>)
+    @loader.command(alias="mz", ru_doc="| Ответьте реплаем на фото, которое хотите разделить. Пример: .mz <на сколько частей разделить (2-4)> <сделать фото в img или file>")
     async def mzcmd(self, m: Message):
-        """| Ответьте реплаем на фото, которое хотите разделить. Пример: .mz <на сколько частей разделить (2-4)> (сделать фото в img или file)"""
+        """| Ответьте реплаем на фото, которое хотите разделить. Пример: .mz <на сколько частей разделить (2-4)> <сделать фото в img или file>"""
         args = utils.get_args_raw(m)
         split_count, output_format = self._parse_arguments(args)
         if not split_count:
