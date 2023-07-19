@@ -6,7 +6,7 @@ from .. import loader
 
 @loader.tds
 class MemMods(loader.Module):
-    """Много мемов!\nСледите за обновлениями,со временем их будет больше."""
+    """Много мемов!\nСледите за обновлениями, со временем их будет больше."""
 
     strings = {"name": "MemMods"}
 
