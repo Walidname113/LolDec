@@ -1,6 +1,6 @@
 # meta developer: @LolDecMods
 # scope: MemMods
-# scope: MemMods 0.0.1
+# scope: MemMods 0.0.2
 from .. import loader
 
 
@@ -11,7 +11,7 @@ class MemMods(loader.Module):
     strings = {"name": "MemMods"}
 
     async def hihicmd(self, message):
-        """Отправляет гс с громким хихихиха"""
+        """HIHIHIHA"""
 
         reply = await message.get_reply_message()
         await message.delete()
@@ -21,10 +21,9 @@ class MemMods(loader.Module):
             voice_note=True,
             reply_to=reply.id if reply else None,
         )
-        return
         
     async def niggacmd(self, message):
-        """Отправляет мемное видео"""
+        """tyanNOnigga"""
 
         reply = await message.get_reply_message()
         await message.delete()
@@ -34,9 +33,6 @@ class MemMods(loader.Module):
             voice_note=True,
             reply_to=reply.id if reply else None,
         )
-        return
-        
-        
         
     async def bagvideocmd(self, message):
         """Отправляет багованное видео"""
@@ -49,8 +45,75 @@ class MemMods(loader.Module):
             voice_note=True,
             reply_to=reply.id if reply else None,
         )
-        return
         
+    async def oofcmd(self, message):
+        """Цьом"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/59",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
         
-   
+    async def naxcmd(self, message):
+        """Иди нахуй"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/58",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
         
+    async def uffcmd(self, message):
+        """Уфф"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/57",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
+        
+    async def idycmd(self, message):
+        """Иду"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/56",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
+        
+    async def scmd(self, message):
+        """Иди нахуй, сука!"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/55",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+        )
+        
+    async def ocmd(self, message):
+        """о_0"""
+
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/filechannelscp/54",
+            voice_note=True,
+            reply_to=reply.id if reply else None,
+    )
