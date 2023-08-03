@@ -24,13 +24,13 @@ class ModuleName(loader.Module):
         args = utils.get_args_raw(m)
         split_count, output_format = self._parse_arguments(args)
         if not split_count:
-            await utils.answer(m, "После команды, укажите сколько частей делать. (От 2 до 4)")
+            await utils.answer(m, "<emoji document_id=5447644880824181073>⚠️</emoji>После команды, укажите сколько частей делать. (От 2 до 4)<emoji document_id=5447644880824181073>⚠️</emoji>")
             return
         if not output_format:
-            await utils.answer(m, "Пожалуйста, укажите формат вывода: [img/file]")
+            await utils.answer(m, "<emoji document_id=5440660757194744323>‼️</emoji>Пожалуйста, укажите формат вывода: [img/file]<emoji document_id=5440660757194744323>‼️</emoji>")
             return
         if split_count < 2 or split_count > 4:
-            await utils.answer(m, "Нельзя сделать больше 4 частей, и меньше 2-ух частей!")
+            await utils.answer(m, "<emoji document_id=5240241223632954241>🚫</emoji>Нельзя сделать больше 4 частей, и меньше 2-ух частей!<emoji document_id=5240241223632954241>🚫</emoji>")
             return
         reply_message = await m.get_reply_message()
         if reply_message and reply_message.media:
