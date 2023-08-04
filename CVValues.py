@@ -18,7 +18,7 @@ class CurrencyModule(loader.Module):
             await utils.answer(message, "Не указаны аргументы. Укажите сумму и тип валюты (UAH, USD, EUR, RUB, GBP, ETH, BTC).")
             return
 
-        await message.edit("🏗Получаем курс...")
+        await message.edit("<emoji document_id=5204027395127913710>🧬</emoji>Получаем курс...<emoji document_id=5204027395127913710>🧬</emoji>")
 
         await message.client.send_message("@exchange_rates_vsk_bot", args)
 
@@ -35,4 +35,4 @@ class CurrencyModule(loader.Module):
             else:
                 await message.client.send_message(message.to_id, cleaned_message)
         else:
-            await utils.answer(message, "🚫Не удалось получить ответ от бота.")
+            await utils.answer(message, "<emoji document_id=5240241223632954241>🚫</emoji>Не удалось получить ответ от бота.<emoji document_id=5240241223632954241>🚫</emoji>")
