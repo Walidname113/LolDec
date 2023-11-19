@@ -1,5 +1,5 @@
 ENG: 🌘🌘🌘Hikka - Userbot
-Modules from Hikka.
+Modules for Hikka.
 
 RUS: 🌘🌘🌘Hikka -Юзербот
 Модули для Hikk'и
